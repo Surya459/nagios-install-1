@@ -33,6 +33,9 @@ function servPrep(){
     # install build dependencies
     sudo apt-get update && sudo apt-get upgrade -y;
     apt-get install build-essential libgd2-xpm-dev openssl libssl-dev xinetd apache2-utils unzip -y;
+    sudo apt install autoconf gcc libc6 make wget unzip libgd2-xpm-dev -y;
+    sudo apt install apache2 php libapache2-mod-php7.0 -y;
+
 }
 
 function prereq(){
